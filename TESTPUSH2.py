@@ -1,1 +1,1 @@
-print("This is a test push"+" wowzers")
+print("This is a test push"+" wowzer")
