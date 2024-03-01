@@ -24,7 +24,7 @@ while True:
         def percent_calculator(max):
             result = (f"100% = {round(max)} lbs\n90% = {round(max*.9)} lbs\n80% = {round(max*.8)} lbs"
                       f"\n70% = {round(max*.7)} lbs\n60% = {round(max*.6)} lbs\n50% = {round(max*.5)} lbs")
-            return (result)
+            return result
         print(percent_calculator(max))
         request3 = input(string_list[4])
         if request3.lower() == "menu":
