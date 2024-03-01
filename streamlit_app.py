@@ -18,7 +18,7 @@ while True:
             print("Invalid input, exiting program...")
             break
     elif request1.lower() == "chart":
-        max = int(input("To calculate your lifting chart, please enter\nyour maximum lift in pounds."))
+        max = int(input("To calculate lifting chart, please enter\nyour maximum lift in pounds."))
         ninety = round(max * .90)
         eighty = round(max * .80)
         seventy = round(max * .70)
