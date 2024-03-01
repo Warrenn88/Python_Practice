@@ -1,12 +1,9 @@
-import math
-
-string_list = ["Type 'max' to calculate max,\nor 'chart' to calculate lifting table:",
+string_list = ["Type 'max' to calculate max,\nor 'chart' to calculate lifting chart:",
                "Enter weight lifted in Lbs:","Enter number of complete reps performed:",
                f"Your max weight for this lift is around","Menu or exit?", "Returning to menu ...",
                "Exiting program ...","Invalid input, returning to menu...",
                "To calculate your lifting chart,\nplease enter your maximum lift to the nearest pound:",
                "Welcome to Warren's Weight Lifting Program",]
-percent_list = [1,.9,.8,.7,.6,.5]
 while True:
     print(string_list[9])
     request1 = input(string_list[0])
@@ -21,12 +18,14 @@ while True:
             print(string_list[6])
             break
         else:
-            print(string_list[7])
+                print(string_list[7])
     elif request1.lower() == "chart":
         max = int(input(string_list[8]))
-        for i in percent_list:
-            result = str(round(i * max)),"lbs"
-            print(" ".join(result))
+        def percent_calculator(max):
+            result = (f"100% = {round(max)} lbs\n90% = {round(max*.9)} lbs\n80% = {round(max*.8)} lbs"
+                      f"\n70% = {round(max*.7)} lbs\n60% = {round(max*.6)} lbs\n50% = {round(max*.5)} lbs")
+            return (result)
+        print(percent_calculator(max))
         request3 = input(string_list[4])
         if request3.lower() == "menu":
             print(string_list[5])
