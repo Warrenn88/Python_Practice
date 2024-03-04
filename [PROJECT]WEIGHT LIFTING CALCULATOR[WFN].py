@@ -8,7 +8,7 @@ while True:
     print(string_list[9])
     request1 = input(string_list[0])
     if request1.lower() == "max":
-        weight, reps = int(input(string_list[1])), int(input(string_list[2]))
+        weight, reps = float(input(string_list[1])), int(input(string_list[2]))
         result = round(weight/(1.0278 - (.0278 * reps)))
         print(string_list[3], str(result) + " lbs.")
         request2 = input(string_list[4])
@@ -18,9 +18,9 @@ while True:
             print(string_list[6])
             break
         else:
-                print(string_list[7])
+            print(string_list[7])
     elif request1.lower() == "chart":
-        max = int(input(string_list[8]))
+        max = float(input(string_list[8]))
         def percent_calculator(max):
             result = (f"100% = {round(max)} lbs\n90% = {round(max*.9)} lbs\n80% = {round(max*.8)} lbs"
                       f"\n70% = {round(max*.7)} lbs\n60% = {round(max*.6)} lbs\n50% = {round(max*.5)} lbs")
