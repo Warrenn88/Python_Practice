@@ -1,0 +1,1 @@
+This is a cipher that shifts messages a set amount of units across the alphabet. Messages can be encoded and decoded. I liked the small math/logic portion of this project where you had to account for moving too far left or right out bounds of the defined alphabet list. Felt nice to come up with a simple solution for it. 

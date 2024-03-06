@@ -1,0 +1,1 @@
+This was a simple exercise on functions that take two inputs. The goal was to find the area that needed to be painted, and return the number of cans needed to perform the job, assuming you may not purchase a fraction of a can.

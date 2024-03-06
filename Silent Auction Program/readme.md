@@ -1,0 +1,1 @@
+This was a silent auction program that would allow people to pass around a tablet, writing their names and placing their bids. This involved assigning dictionary keys and values, retrieving the highest value, and breaking the loop to declare a winner. 

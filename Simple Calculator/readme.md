@@ -1,0 +1,1 @@
+This is a simple calculator that allows you to carry forwarad your previous result into future calculations. This was done through nested loops. I would like to develop this further soon and add more complicated calculations and new functions. This will be an ongoing project. 

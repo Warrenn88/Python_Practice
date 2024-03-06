@@ -1,0 +1,1 @@
+This contains two simple/brute force coding attempts at chance games by using if/elif/else statements.

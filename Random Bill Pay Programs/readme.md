@@ -1,0 +1,1 @@
+These two mini projects were meant to investigate the random module, and randomly picks someone who gets to pay the bill at the end of a meal. One uses if/elif/else arguments, the other just uses random choice.

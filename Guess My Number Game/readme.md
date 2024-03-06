@@ -1,0 +1,1 @@
+This was a short program using a while loop and a break to play guess my number. Fun little learning project and reinforced my understanding of opening a program with "while True:"

@@ -1,0 +1,1 @@
+This is a basic password generator using letters, numbers, symbols, and implementing the random module.
