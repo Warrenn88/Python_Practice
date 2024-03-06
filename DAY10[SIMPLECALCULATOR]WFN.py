@@ -14,7 +14,6 @@ def calculator(first_number, operator, second_number):
     elif operator == "/":
         result = round(first_number / second_number, 2)
         return result
-def exp_calculator(first)
 
 while True:
     first_number = float(input(string_list[1]))
