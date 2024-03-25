@@ -73,6 +73,10 @@ def split2_solver():
         print("Invalid input. Returning to menu")
         split2_solver()
 
+def double_down():
+    user_hand.append(card_generator())
+    print(f"Player doubles down and has a hand of {user_hand} with a value of {get_hand_value(user_hand)}")
+
 print(string_list[0])
 while True:
     user_hand = [card_generator(), card_generator()]
@@ -99,6 +103,10 @@ while True:
                     user_hand = hand2
                     split2_solver()
                     break
+                elif user_choice.lower() == "double down":
+                    double_down()
+                    winning_hand()
+                    break
                 else:
                     print(string_list[1])
             else:
@@ -108,6 +116,10 @@ while True:
                     break
                 elif user_choice.lower() == "hit":
                     user_hitter()
+                    winning_hand()
+                    break
+                elif user_choice.lower() == "double down":
+                    double_down()
                     winning_hand()
                     break
                 else:
