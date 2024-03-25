@@ -2,7 +2,7 @@ import requests
 
 def weather_api_call(zip_code):
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
-    api_key = "e8751357b838b575a20019990b1785f5"
+    api_key = "PLACEHOLDERKEY"
     complete_url = base_url + "appid=" + api_key + "&zip=" + str(zip_code) + "&units=imperial"
     responsejson = requests.get(complete_url)
     return responsejson.json()
