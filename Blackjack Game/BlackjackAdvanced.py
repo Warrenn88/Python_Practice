@@ -1,4 +1,5 @@
 import random
+
 string_list = ["Welcome to Blackjack!\nDealer hits on all 16's. Ace is 1 or 11. 21 can tie.",
                "Invalid input, returning to menu", "Type 'deal' for a new hand, or 'exit' to quit:",
                "Invalid bet", "You don't have enough for the minimum bet. Game over.",
@@ -13,6 +14,7 @@ user_bet = 0
 win = 0
 game = 1
 ddcheck = 0
+
 def get_hand_value(hand):
     total = 0
     num_aces = 0
@@ -99,6 +101,7 @@ def double_down_check():
         ddcheck = 1
     else:
         ddcheck = 0
+
 def player_bet():
     global user_bet
     while True:
@@ -128,7 +131,6 @@ def game_check():
     if player_bank <= 9:
         game = 0
         print(string_list[4])
-
 
 print(string_list[0])
 while game == 1:
