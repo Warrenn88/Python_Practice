@@ -2,10 +2,11 @@ import random
 string_list = ["Welcome to Blackjack!\nDealer hits on all 16's. Ace is 1 or 11. 21 can tie.",
                "Invalid input, returning to menu", "Type 'deal' for a new hand, or 'exit' to quit:",
                "Invalid bet", "You don't have enough for the minimum bet. Game over.",
-               "You don't have enough $ to double down!", "You don't have enough $ to split!"]
+               "You don't have enough $ to double down!", "You don't have enough $ to split!",
+               " Place your bet. Min bet $10. You have $"]
 
-cards = [2, 2, 2, 2, 3, 3, 3, 3] #4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 8,
-         #9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 11, 11, 11, 11]
+cards = [2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 8,
+         9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 11, 11, 11, 11]
 
 player_bank = 100
 user_bet = 0
@@ -60,7 +61,8 @@ def user_hitter():
             variable = input(f"Your hand is {user_hand} and the value is {get_hand_value(user_hand)}. Hit or stay?")
 
 def split1_solver():
-    user_choice2 = input(f"Your two new hands are {hand1} and {hand2}.\nFor hand 1, hit or stay?")
+    user_choice2 = input(f"Your two new hands are {hand1} and {hand2}."
+                         f"\nFor hand 1, hit or stay?")
     if user_choice2.lower() == "hit":
         user_hitter()
         winning_hand()
@@ -86,7 +88,8 @@ def double_down():
     global player_bank
     user_bet = user_bet * 2
     user_hand.append(card_generator())
-    print(f"Player doubles down and has a hand of {user_hand} with a value of {get_hand_value(user_hand)}")
+    print(f"Player doubles down and has a hand of"
+          f" {user_hand} with a value of {get_hand_value(user_hand)}")
 
 def double_down_check():
     global ddcheck
@@ -99,7 +102,7 @@ def double_down_check():
 def player_bet():
     global user_bet
     while True:
-        user_bet = int(input(f"Place your bet. Min bet $10. You have ${player_bank}:"))
+        user_bet = int(input(f"{string_list[7]}{player_bank}:"))
         if user_bet >= 10 and user_bet <= player_bank:
             break
         else:
@@ -167,6 +170,7 @@ while game == 1:
                         double_down()
                         winning_hand()
                         bank_calc()
+                        break
                     elif ddcheck == 0:
                         print(string_list[5])
                 else:
@@ -188,6 +192,7 @@ while game == 1:
                         double_down()
                         winning_hand()
                         bank_calc()
+                        break
                     elif ddcheck == 0:
                         print(string_list[5])
                 else:
