@@ -60,7 +60,8 @@ def user_hitter():
         if get_hand_value(user_hand) > 21:
             break
         else:
-            variable = input(f"Your hand is {user_hand} and the value is {get_hand_value(user_hand)}. Hit or stay?")
+            variable = input(f"Your hand is {user_hand} "
+                             f"and the value is {get_hand_value(user_hand)}. Hit or stay?")
 
 def split1_solver():
     user_choice2 = input(f"Your two new hands are {hand1} and {hand2}."
