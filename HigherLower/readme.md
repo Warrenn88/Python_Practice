@@ -1,0 +1,1 @@
+This is a version of higher or lower based on a social media followers for celebrities. Code from scratch. This imports and taps into a JSON/dictionary file to operate. File is named "smdata". 
