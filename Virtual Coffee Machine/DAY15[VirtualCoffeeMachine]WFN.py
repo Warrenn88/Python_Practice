@@ -136,7 +136,7 @@ def cap_check():
         print(f"Not enough milk. Cappuccino requires {(menu['cappuccino']['ingredients']['milk'])} ml,\n"
               f"and there is only {Milk}ml available.\nPlease refill milk.")
 
-Water = 1200
+Water = 1000
 Milk = 800
 Coffee = 500
 Money = 0
