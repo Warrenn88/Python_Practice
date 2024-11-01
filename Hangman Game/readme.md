@@ -1,1 +1,0 @@
-This is a simple version of Hangman. This was my first real attempt at using loops and assigning loop data to outside lists. This was difficult for me and I use it occasionally (for now) just to brush up on comprehension. Fun exercise. 

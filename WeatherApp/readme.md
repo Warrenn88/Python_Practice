@@ -1,1 +1,0 @@
-This is a simple weather app using an API call. Good exercise in JSON and dictionary calls.

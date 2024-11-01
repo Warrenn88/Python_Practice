@@ -1,1 +1,0 @@
-This was a very basic program exercise to calculate the amount of tip each person owes at the end of a dinner outing. Was a nice introductory drill of inputs, some math functions, formatting basics, etc. 

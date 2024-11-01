@@ -1,1 +1,0 @@
-This was a simple introductory exercise to assign variables, print strings, and learn about nested quotations. 

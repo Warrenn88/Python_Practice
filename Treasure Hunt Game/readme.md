@@ -1,1 +1,0 @@
-This was an exercise in using nested if/elif/else statements to create a simple treasure hunt game based on user inputs and decisions.

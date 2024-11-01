@@ -1,1 +1,0 @@
-Simple summary idea generator I use for freelance summarization tasks. Will expand it as I get more ideas. Work in progress. 
