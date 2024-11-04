@@ -6,7 +6,7 @@ from collections import Counter
 file_path = "C:\\Users\\Warren\\Desktop\\hotaling_cocktails - Cocktails.csv"
 df = pd.read_csv(file_path)
 
-#Functions and functions and functions
+#Functions and functions and functions. Excuse my weird naming, this was loose and fast.
 def data_types():
     print(df.dtypes)
 
@@ -41,6 +41,9 @@ def dataframe_to_numpy_array(df):
     return df.to_numpy()
 
 #A big old mess of data cleaning
+#Should just set these functions up to iterate all columns and clean in an automated fashion
+#Could set it up so any columns with a null count are automatically dropped and redefine df to reflect
+#This makes sense because we know what columns we really want to work with
 
 data_types()
 null_check()
@@ -55,7 +58,7 @@ null_check()
 total_duplicate_check()
 column_length_check(df, 'Cocktail Name')
 column_length_check(df, 'Ingredients')
-df = reset_dataframe_index(df)
+df = reset_dataframe_index(df) #fixes the numbered column left of cleaned data
 print(df)
 df = dataframe_to_numpy_array(df)
 print(df)
