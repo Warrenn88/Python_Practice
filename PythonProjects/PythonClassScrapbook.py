@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from collections import Counter
 
 file_path = "C:\\Users\\Warren\\Desktop\\hotaling_cocktails - Cocktails.csv"
 df = pd.read_csv(file_path)
@@ -54,3 +55,22 @@ df = reset_dataframe_index(df)
 print(df)
 df = dataframe_to_numpy_array(df)
 print(df)
+
+ingredients_list = df[:,1]
+all_ingredients = []
+for ingredients in ingredients_list:
+    all_ingredients.extend([ingredient.strip() for ingredient in ingredients.split(',')])
+
+ingredient_counts = Counter(all_ingredients)
+
+top_ingredients = ingredient_counts.most_common(10)
+ingredient_names, counts = zip(*top_ingredients)
+
+plt.figure(figsize=(10, 6))
+plt.bar(ingredient_names, counts)
+plt.title("Top 10 Most Common Cocktail Ingredients")
+plt.xlabel("Ingredients")
+plt.ylabel("Count")
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
