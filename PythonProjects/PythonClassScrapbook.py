@@ -1,5 +1,5 @@
 import pandas as pd
-import NumPy as np
+import numpy as np
 
 file_path = "C:\\Users\\Warren\\Desktop\\hotaling_cocktails - Cocktails.csv"
 df = pd.read_csv(file_path)
